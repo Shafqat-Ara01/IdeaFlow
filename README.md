@@ -7,7 +7,7 @@ Built using **HTML, CSS, and vanilla JavaScript**, this project focuses on DOM m
 
 ##  Features
 
-### ✔ Add New Ideas  
+###  Add New Ideas  
 A modal lets users enter:
 - Title  
 - Description  
