@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IdeaFlow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <input
+        type="text"
+        placeholder="Search by idea title.."
+        id="SearchInput"
+      />
+      <button class="add-btn">&plus;Add New Idea</button>
+    </header>
+    <section>
+      <h2>IdeaFlow</h2>
+      <p>Organize Your Ideas, Seamlessly</p>
+    </section>
+
+    <main class="board">
+      <div class="column" data-column="To Try">
+        <h3>To Try</h3>
+        <div class="column-content"></div>
+      </div>
+
+      <div class="column" data-column="In Progress">
+        <h3>In Progress</h3>
+        <div class="column-content"></div>
+      </div>
+
+      <div class="column" data-column="Done">
+        <h3>Done</h3>
+        <div class="column-content"></div>
+      </div>
+    </main>
+    <button id="floatingAddBtn" class="floating-add-btn">+</button>
+    <div class="modal">
+      <div class="modal-content">
+        <h3>New Idea</h3>
+        <button class="closeBtn">&#x2715;</button>
+        <form action="" class="form-group">
+          <div class="title-input">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="titleInput" />
+          </div>
+          <div class="description-input">
+            <label for="description">Description </label>
+            <textarea
+              name="description"
+              id="description-input"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="status-input">
+            <label>Status</label>
+            <select name="status" id="status">
+              <option value="To Try">To Try</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Done">Done</option>
+            </select>
+          </div>
+
+          <button type="submit" class="add-idea-btn">Add Idea</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
